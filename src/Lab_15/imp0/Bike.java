@@ -1,54 +1,55 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp0;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
-public abstract class Bike {
+abstract class Bike {
 
-    Bike(){
-        
+    // Constructor.
+    Bike() {
         System.out.println("Bike is created");
-    
     }
-    
+
     abstract void run();
-    
-    void changeGear(){
-        
+
+    void changeGear() {
+
         System.out.println("Gear changed");
-    
+
     }
+
 }
 
+// Honda class.
 class Honda extends Bike {
-    
+
     @Override
-    void run(){
-        
+    void run() {
+
         System.out.println("Running safely..");
-        
+
     }
-    
+
 }
 
+// TestAbstraction2 class.
 class TestAbstraction2 {
-    
+
     /**
-     * 
-     * @param args 
+     * @param args the command line here.
      */
     public static void main(String[] args) {
-        
-       Bike b = new Honda();
-       b.run();
-       b.changeGear();
-        
+        // TODO code application logic here.
+
+        Bike b = new Honda();
+        b.run();
+        b.changeGear();
+
     }
-    
+
 }

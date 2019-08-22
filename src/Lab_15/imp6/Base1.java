@@ -1,67 +1,96 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Lab_15.imp6;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public abstract class Base1 {
+ package Lab_15.imp6;
 
-    int y = 5;
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ abstract class Base1 {
 
-    public Base1() {
-        y -= 2;
-        System.out.println("y = " + method(4, 7));
-    }
+     int y = 5;
 
-    abstract int method(int i);
+     Base1() {
 
-    abstract int method(int i, int j);
+         y -= 2;
+         System.out.println("y = " + method(4, 7));
 
-}
+     }
 
-class Super extends Base1 {
+     /**
+      * @param i An int number.
+      * @return Abstract method.
+      */
+     abstract int method(int i);
 
-    int y = 2;
+     /**
+      * @param i An int number.
+      * @param j An int number.
+      * @return Abstract method.
+      */
+     abstract int method(int i, int j);
 
-    public Super() {
+ }
 
-        System.out.println("y = " + method(4));
+ // Super class.
+ class Super extends Base1 {
 
-    }
+     int y = 2;
 
-    @Override
-    int method(int i) {
+     Super() {
 
-        return (y * i + super.y);
+         System.out.println("y = " + method(4));
 
-    }
+     }
 
-    @Override
-    int method(int i, int j) {
+     /**
+      * @param i An int number.
+      * @return (y * i + super.y).
+      */
+     @Override
+     int method(int i) {
 
-        return (method(i) + i + j);
+         return (y * i + super.y);
 
-    }
+     }
 
-}
+     /**
+      * @param i An int number.
+      * @param j An int number.
+      * @return (method ( i) + i + j).
+      */
+     @Override
+     int method(int i, int j) {
 
-class Sub1 extends Super {
-    
-    @Override
-    int method (int i){
-        return y * 2 + i;
-        
-    }
-    
-    public static void main(String[] args) {
-    
-        Sub sub = new Sub();
-        
-    }
-    
-}
+         return (method(i) + i + j);
+
+     }
+
+ }
+
+ // Sup1 class.
+ class Sub1 extends Super {
+     /**
+      * @param i An int number.
+      * @return y * 2 + i.
+      */
+     @Override
+     int method(int i) {
+
+         return y * 2 + i;
+
+     }
+
+     /**
+      * @param args the command line here.
+      */
+     public static void main(String[] args) {
+         // TODO code application logic here.
+
+         Sub sub = new Sub();
+
+     }
+
+ }

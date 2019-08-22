@@ -1,68 +1,83 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Lab_15.imp6;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public abstract class Base {
+ package Lab_15.imp6;
 
-    int x = 3;
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ abstract class Base {
 
-    public Base() {
-        x += 2;
-        System.out.println("x = " + x);
-        x++;
-    }
+     int x = 3;
 
-    abstract int calculate();
+     Base() {
 
-    abstract int calculate(int i);
+         x += 2;
+         System.out.println("x = " + x);
+         x++;
 
-}
+     }
 
-class SuperA extends Base {
+     abstract int calculate();
 
-    int x = 1;
+     /**
+      * @param i An int number.
+      * @return abstract method.
+      */
+     abstract int calculate(int i);
 
-    public SuperA() {
+ }
 
-        System.out.println("x = " + calculate(2));
+ // SuperA class.
+ class SuperA extends Base {
 
-    }
+     int x = 1;
 
-    @Override
-    int calculate() {
-        return x;
-    }
+     SuperA() {
 
-    @Override
-    int calculate(int i) {
-        return calculate() + i;
-    }
+         System.out.println("x = " + calculate(2));
 
-}
+     }
 
-class Sub extends SuperA {
+     @Override
+     int calculate() {
+         return x;
+     }
 
-    public Sub() {
-        x += 3;
-    }
+     /**
+      * @param i An int number.
+      * @return calculate() + i
+      */
+     @Override
+     int calculate(int i) {
+         return calculate() + i;
+     }
 
-    @Override
-    int calculate() {
-        return x + 6;
-    }
+ }
 
-    public static void main(String[] args) {
+ // Sup class.
+ class Sub extends SuperA {
 
-        Sub sub = new Sub();
-        System.out.println("x = " + sub.calculate());
+     Sub() {
+         x += 3;
+     }
 
-    }
+     @Override
+     int calculate() {
+         return x + 6;
+     }
 
-}
+     /**
+      * @param args the command line here.
+      */
+     public static void main(String[] args) {
+         // TODO code application logic here.
+
+         Sub sub = new Sub();
+         System.out.println("x = " + sub.calculate());
+
+     }
+
+ }

@@ -1,48 +1,51 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp1;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public interface Printable {
-    
+
     void print();
-    
+
     void copy(int i);
-    
+
 }
 
-class Print1 implements Printable{
-    
+// Print1 class.
+class Print1 implements Printable {
+
     @Override
-    public void print(){
-        
+    public void print() {
+
         System.out.println("Hello");
-        
+
     }
-    
-    @Override
-    public void copy(int i){
-        
-        System.out.println("Hello" + i);
-        
-    }
-    
+
     /**
-     * 
-     * @param args 
+     * @param i An int number.
+     */
+    @Override
+    public void copy(int i) {
+
+        System.out.println("Hello" + i);
+
+    }
+
+    /**
+     * @param args the command line here.
      */
     public static void main(String[] args) {
-        
+        // TODO code application logic here.
+
         Printable p = new Print1();
         p.print();
         p.copy(5);
-        
+
     }
-    
+
 }

@@ -1,54 +1,77 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Lab_15.imp5;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public abstract class Base {
+ package Lab_15.imp5;
 
-    int z = 6;
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ abstract class Base {
 
-    public Base() {
+     int z = 6;
 
-        z -= 2;
-        System.out.println("z = " + method(3, 8));
+     Base() {
 
-    }
+         z -= 2;
+         System.out.println("z = " + method(3, 8));
 
-    abstract int method(int i);
+     }
 
-    abstract int method(int i, int j);
+     /**
+      *
+      * @param i An int number.
+      * @return Abstract method.
+      */
+     abstract int method(int i);
 
-}
+     /**
+      *
+      * @param i An int number.
+      * @param j An int number.
+      * @return Abstract method.
+      */
+     abstract int method(int i, int j);
 
-class Sub extends Base {
+ }
 
-    int z = 2;
+ class Sub extends Base {
 
-    public Sub() {
+     int z = 2;
 
-        System.out.println("z = " + method(4));
+     private Sub() {
 
-    }
+         System.out.println("z = " + method(4));
 
-    @Override
-    int method(int i) {
-        return (z * i + super.z);
-    }
+     }
 
-    @Override
-    int method(int i, int j) {          // j is a local variable
-        return (method(i) + i + j);     // j = 0
-    }
+     /**
+      * @param i An int number.
+      * @return (z * i + super.z)
+      */
+     @Override
+     int method(int i) {
+         return (z * i + super.z);
+     }
 
-    public static void main(String[] args) {
+     /**
+      * @param i An int number.
+      * @param j An int number.
+      * @return (method ( i) + i + j).
+      */
+     @Override
+     int method(int i, int j) {          // j is a local variable
+         return (method(i) + i + j);     // j = 0
+     }
 
-        Sub s = new Sub();
+     /**
+      * @param args the command line here.
+      */
+     public static void main(String[] args) {
+         // TODO code application logic here.
 
-    }
-}
+         Sub s = new Sub();
+
+     }
+ }

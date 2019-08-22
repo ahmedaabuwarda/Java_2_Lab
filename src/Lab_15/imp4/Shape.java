@@ -1,13 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ /*
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp4;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public abstract class Shape {
     
@@ -18,7 +17,12 @@ public abstract class Shape {
 }
 
 abstract class Square extends Shape {
-    
+
+    /**
+     *
+     * @param side A double number.
+     * @return side * side.
+     */
     @Override
     public double getArea(double side) {
         
@@ -33,10 +37,10 @@ abstract class Square extends Shape {
 class Testprogram {
 
     /**
-     *
-     * @param args
+     * @param args the command line here.
      */
     public static void main(String[] args) {
+        // TODO code application logic here.
         
         //Square s = new Square();
         //System.out.println(s.getArea(5));

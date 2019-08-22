@@ -1,19 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp4;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
-public abstract class Base {
+abstract class Base {
 
     int x = 2;
 
-    public Base() {
+    Base() {
 
         System.out.println("x = " + x);
         x++;
@@ -26,9 +25,10 @@ public abstract class Base {
 
 }
 
+// MySuper class.
 class MySuper extends Base {
 
-    public MySuper() {
+    MySuper() {
 
         System.out.println("x = " + calculate(2));
 
@@ -41,6 +41,10 @@ class MySuper extends Base {
 
     }
 
+    /**
+     * @param i An int number.
+     * @return i * x.
+     */
     @Override
     int calculate(int i) {
 
@@ -50,24 +54,25 @@ class MySuper extends Base {
 
 }
 
+// Sub class.
 class Sub extends MySuper {
-    
+
     @Override
-    int calculate (){
-        
+    int calculate() {
+
         return x + 2;
-    
+
     }
-    
+
     /**
-     * .
-     * @param args 
+     * @param args the command line here.
      */
     public static void main(String[] args) {
-        
+        // TODO code application logic here.
+
         Sub sub = new Sub();
         System.out.println("x = " + sub.calculate());
-        
+
     }
-    
+
 }

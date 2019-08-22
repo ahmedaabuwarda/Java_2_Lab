@@ -1,18 +1,21 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp3;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public interface Drawable {
 
     void draw();
 
+    /**
+     * @param i An int number.
+     * @return i * i * i.
+     */
     static int cupe(int i) {
 
         return i * i * i;
@@ -27,6 +30,7 @@ public interface Drawable {
 
 }
 
+// Rectangle class.
 class Rectangle implements Drawable {
 
     @Override
@@ -38,13 +42,14 @@ class Rectangle implements Drawable {
 
 }
 
+// Testinterface3 class.
 class Testinterface3 {
 
     /**
-     *
-     * @param args
+     * @param args the command line here.
      */
     public static void main(String[] args) {
+        // TODO code application logic here.
 
         Drawable dr = new Rectangle();
         dr.draw();

@@ -1,65 +1,55 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_15.imp0;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
-public abstract class Shape {
-    
+abstract class Shape {
+
     abstract void drow();
-    
+
 }
 
-/**
- * 
- * @author AHMED ABUWARDA
- */
+// Rectangle class.
 class Rectangle extends Shape {
-    
+
     @Override
-    void drow(){
-        
+    void drow() {
+
         System.out.println("drawing rectangle");
-        
+
     }
-    
+
 }
 
-/**
- * 
- * @author AHMED ABUWARDA
- */
+// Circle class.
 class Circle extends Shape {
-    
+
     @Override
-    void drow(){
-        
+    void drow() {
+
         System.out.println("drawing circle");
-        
+
     }
-    
+
 }
 
-/**
- * 
- * @author AHMED ABUWARDA
- */
+// TestAbstraction1 class.
 class TestAbstraction1 {
-    
+
     /**
-     * 
-     * @param args 
+     * @param args the command line here.
      */
     public static void main(String[] args) {
-        
+        // TODO code application logic here.
+
         Shape s = new Circle();
         s.drow();
-        
+
     }
-    
+
 }
