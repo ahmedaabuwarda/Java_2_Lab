@@ -1,71 +1,64 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_14;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class Shape {
 
-    /**
-     * Constructor
-     */
-    public Shape() {
-        
+    // Constructor.
+    Shape() {
+
     }
 
     /**
-     * @return general
+     * @return general.
      */
     public String print() {
-        
         return "General";
-        
     }
+
 }
 
+// Circle Class.
 class Circle extends Shape {
 
-    public Circle() {
-        
+    Circle() {
+
     }
 
     /**
-     * @return Circle
+     * @return Circle.
      */
     @Override
     public String print() {
-        
         return "Circle";
-        
     }
+
 }
 
 /**
- * New class
- * @author AHMED ABUWARDA
+ * New class.
+ *
+ * @author AHMED ABUWARDA.
  */
 class Rectangle extends Shape {
 
-    /**
-     * Constructor
-     */
-    public Rectangle() {
-        
+    // Constructor.
+    Rectangle() {
+
     }
 
     /**
-     * @return rectangle
+     * @return rectangle.
      */
     @Override
     public String print() {
-        
         return "Rectangle";
-        
     }
 
 }
