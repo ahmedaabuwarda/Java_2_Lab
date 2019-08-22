@@ -16,7 +16,7 @@ public class _03_TestPersonWithArrayList {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        //TODO code application logic here.
+        // TODO code application logic here.
 
         // Crate ArrayList with Person class.
         ArrayList<_03_PersonWithArrayList> person = new ArrayList<>();

@@ -14,7 +14,7 @@ public class _04_Ex01_TestBank {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        //TODO code application logic here.
+        // TODO code application logic here.
 
         // Create user1 object from _04_Ex01_Bank class, And assign values to it
         _04_Ex01_Bank user1 = new _04_Ex01_Bank(12016666, 20.19,
