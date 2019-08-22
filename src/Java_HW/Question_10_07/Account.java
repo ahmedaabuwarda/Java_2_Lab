@@ -1,126 +1,122 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Java_HW.Question_10_07;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-import java.util.Date;
+ package Java_HW.Question_10_07;
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public class Account {
+ import java.util.Date;
 
-    // Data fields
-    private int id;
-    private double balance;
-    private static double annualInterestRate;
-    private final Date dateCreated;
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ public class Account {
 
-    // Constructors
-    /**
-     * Creates a default account
-     */
-    Account() {
-        id = 0;
-        balance = 0;
-        annualInterestRate = 0;
-        dateCreated = new Date();
-    }
+     // Data fields.
+     private int id;
+     private double balance;
+     private static double annualInterestRate;
+     private final Date dateCreated;
 
-    /**
-     * Creates an account with the specified id and initial balance
-     */
-    Account(int newId, double newBalance) {
-        
-        id = newId;
-        balance = newBalance;
-        dateCreated = new Date();
-    
-    }
+     // Constructors.
+     Account() {
 
-    /**
-     * Set id
-     * @param newId 
-     */
-    public void setId(int newId) {
-        id = newId;
-    }
+         id = 0;
+         balance = 0;
+         annualInterestRate = 0;
+         dateCreated = new Date();
 
-    /**
-     * Set balance
-     * @param newBalance 
-     */
-    public void setBalance(double newBalance) {
-        balance = newBalance;
-    }
+     }
 
-    /**
-     * Set annualInterestRate
-     * @param newAnnualInterestRate 
-     */
-    public void setAnnualInterestRate(double newAnnualInterestRate) {
-        annualInterestRate = newAnnualInterestRate;
-    }
+     // Creates an account with the specified id and initial balance.
 
-    /**
-     * @return id
-     */
-    public int getId() {
-        return id;
-    }
+     /**
+      * @param newId      An int Id.
+      * @param newBalance Double balance.
+      */
+     Account(int newId, double newBalance) {
 
-    /**
-     * @return balance
-     */
-    public double getBalance() {
-        return balance;
-    }
+         id = newId;
+         balance = newBalance;
+         dateCreated = new Date();
 
-    /**
-     * @return annualInterestRate
-     */
-    public double getAnnualInterestRate() {
-        return annualInterestRate;
-    }
+     }
 
-    /**
-     * @return dateCreated
-     */
-    public String getDateCreated() {
-        return dateCreated.toString();
-    }
+     /**
+      * @param newId Set id.
+      */
+     public void setId(int newId) {
+         id = newId;
+     }
 
-    /**
-     * @return monthly interest rate
-     */
-    public double getMonthlyInterestRate() {
-        return annualInterestRate / 12;
-    }
-    
-    /**
-     * @return monthly interest
-     */
-    public double getMonthlyInterest() {
-        return balance * (getMonthlyInterestRate() / 100);
-    }
+     /**
+      * @param newBalance Set balance.
+      */
+     public void setBalance(double newBalance) {
+         balance = newBalance;
+     }
 
-    /**
-     * Decrease balance by amount
-     * @param amount 
-     */
-    public void withdraw(double amount) {
-        balance -= amount;
-    }
+     /**
+      * @param newAnnualInterestRate Set annualInterestRate.
+      */
+     public void setAnnualInterestRate(double newAnnualInterestRate) {
+         annualInterestRate = newAnnualInterestRate;
+     }
 
-    /**
-     * Increase balance by amount 
-     * @param amount 
-     */
-    public void deposit(double amount) {
-        balance += amount;
-    }
+     /**
+      * @return id.
+      */
+     public int getId() {
+         return id;
+     }
 
-}
+     /**
+      * @return balance.
+      */
+     double getBalance() {
+         return balance;
+     }
+
+     /**
+      * @return annualInterestRate.
+      */
+     public double getAnnualInterestRate() {
+         return annualInterestRate;
+     }
+
+     /**
+      * @return dateCreated.
+      */
+     public String getDateCreated() {
+         return dateCreated.toString();
+     }
+
+     /**
+      * @return monthly interest rate.
+      */
+     private double getMonthlyInterestRate() {
+         return annualInterestRate / 12;
+     }
+
+     /**
+      * @return monthly interest.
+      */
+     public double getMonthlyInterest() {
+         return balance * (getMonthlyInterestRate() / 100);
+     }
+
+     /**
+      * @param amount Decrease balance by amount.
+      */
+     void withdraw(double amount) {
+         balance -= amount;
+     }
+
+     /**
+      * @param amount Increase balance by amount.
+      */
+     void deposit(double amount) {
+         balance += amount;
+     }
+
+ }
