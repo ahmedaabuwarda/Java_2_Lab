@@ -1,21 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_13._10_oop2;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _22_ParentA {
 
     protected int b = 3;
 
-    /**
-     * Constructor
-     */
+    // Constructor.
     public _22_ParentA() {
 
         b += 3;
@@ -24,9 +21,9 @@ public class _22_ParentA {
     }
 
     /**
-     * Another Constructor
+     * Another Constructor.
      *
-     * @param i
+     * @param i An int number.
      */
     public _22_ParentA(int i) {
 
@@ -38,17 +35,15 @@ public class _22_ParentA {
 }
 
 /**
- * New Class
+ * New Class.
  *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 class ChildA extends _22_ParentA {
 
     int b = 4;
 
-    /**
-     * Constructor
-     */
+    // Constructor.
     public ChildA() {
 
         super(3);
@@ -60,15 +55,13 @@ class ChildA extends _22_ParentA {
 }
 
 /**
- * New class
+ * New class.
  *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 class ChildB extends ChildA {
 
-    /**
-     * Constructor
-     */
+    // Constructor.
     public ChildB() {
 
         b += 2;
@@ -77,10 +70,9 @@ class ChildB extends ChildA {
     }
 
     public static void main(String[] args) {
+        // TODO code application logic here.
 
-        /**
-         * Create new object
-         */
+        // Create new object.
         ChildB childB = new ChildB();
 
     }

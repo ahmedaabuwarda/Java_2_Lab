@@ -1,27 +1,24 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_13._05_oop2;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _10_TestParent {
-    
+
     /**
-     * 
-     * @param args the command line here
+     * @param args the command line here.
      */
     public static void main(String[] args) {
-        
-        /**
-         * Create child object from Child_2 class
-         */
-       Child_2 child = new Child_2(); 
-        
+        // TODO code application logic here.
+
+        // Create child object from Child_2 class.
+        Child_2 child = new Child_2();
+
     }
-    
+
 }

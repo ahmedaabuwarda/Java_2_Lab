@@ -1,29 +1,24 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_13._10_oop2;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _21_AandB {
 
-    /**
-     * Print method
-     */
+    // Print method.
     public void print() {
 
         System.out.println("I'm A");
 
     }
 
-    /**
-     * Get Data method
-     */
-    public void getData() {
+    // Get data method.
+    void getData() {
 
         print();
 
@@ -32,15 +27,13 @@ public class _21_AandB {
 }
 
 /**
- * New Class
+ * New Class.
  * 
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 class B extends _21_AandB {
 
-    /**
-     * Override print method
-     */
+    // Override print method.
     @Override
     public void print() {
 
@@ -49,10 +42,10 @@ class B extends _21_AandB {
     }
 
     /**
-     *
-     * @param args
+     * @param args the command line here.
      */
     public static void main(String[] args) {
+        // TODO code application logic here.
 
         new B().getData();
 

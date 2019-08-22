@@ -1,20 +1,18 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_13._02_oop2;
 
 /**
- * Default class for parent
- * 
- * @author AHMED ABUWARDA
+ * Default class for parent.
+ *
+ * @author AHMED ABUWARDA.
  */
 public class _03_Parent {
 
-    /**
-     * Parent constructor
-     */
+    // Parent constructor.
     public _03_Parent() {
 
         System.out.println("Parent");
@@ -24,16 +22,14 @@ public class _03_Parent {
 }
 
 /**
- * Another class for Child 1
- * 
- * @author AHMED ABUWARDA
+ * Another class for Child 1.
+ *
+ * @author AHMED ABUWARDA.
  */
 class Child_1 extends _03_Parent {
 
-    /**
-     * Child 1 constructor
-     */
-    public Child_1() {
+    // Child 1 constructor.
+    Child_1() {
 
         System.out.println("Child_1");
 
@@ -43,15 +39,13 @@ class Child_1 extends _03_Parent {
 
 /**
  * Another class for Child 2
- * 
- * @author AHMED ABUWARDA
+ *
+ * @author AHMED ABUWARDA.
  */
 class Child_2 extends Child_1 {
 
-    /**
-     * Child 2 constructor
-     */
-    public Child_2() {
+    // Child 2 constructor.
+    Child_2() {
 
         System.out.println("Child_2");
 

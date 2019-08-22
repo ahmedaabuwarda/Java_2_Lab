@@ -1,19 +1,16 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_13._11_oop2;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _24_ParentA {
 
-    /**
-     * Print method
-     */
+    // Print method.
     public void print() {
 
         System.out.println("ParentA");
@@ -21,11 +18,11 @@ public class _24_ParentA {
     }
 
     /**
-     * Foo method
+     * Foo method.
      *
-     * @return Foo
+     * @return Foo.
      */
-    public String foo() {
+    String foo() {
 
         return "Foo";
 
@@ -34,15 +31,13 @@ public class _24_ParentA {
 }
 
 /**
- * New class
+ * New Class.
  *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 class ChildA extends _24_ParentA {
 
-    /**
-     * Override print method
-     */
+    // Override print method.
     @Override
     public void print() {
 
@@ -53,28 +48,29 @@ class ChildA extends _24_ParentA {
     }
 
     /**
-     * Show method
+     * Show method.
      *
-     * @return ChildA_1
+     * @return ChildA_1.
      */
     public String show() {
 
         return "ChildA_1";
 
     }
+
 }
 
 /**
- * New class
+ * New Class.
  *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 class ChildB extends ChildA {
 
     /**
-     * Override show method
+     * Override show method.
      *
-     * @return ChildB_1
+     * @return ChildB_1.
      */
     @Override
     public String show() {
@@ -84,16 +80,15 @@ class ChildB extends ChildA {
     }
 
     /**
-     *
-     * @param args
+     * @param args the command line here.
      */
     public static void main(String[] args) {
+        // TODO code application logic here.
 
-        /**
-         * Creating new object
-         */
+        // Creating new object.
         ChildB childB = new ChildB();
         childB.print();
 
     }
+
 }
