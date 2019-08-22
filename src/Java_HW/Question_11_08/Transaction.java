@@ -1,16 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Java_HW.Question_11_08;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class Transaction {
 
+    // Data Field.
     private final java.util.Date date;
     private char type;
     private double amount;
@@ -18,88 +18,84 @@ public class Transaction {
     private String description;
 
     /**
-     * Construts a Transaction with specified date, type, balance and
-     * description
-     * 
-     * @param type
-     * @param amount
-     * @param balance
-     * @param description 
+     * Construts a Transaction with specified date, type, balance and description.
+     *
+     * @param type        Type.
+     * @param amount      Amount.
+     * @param balance     Balance.
+     * @param description Description.
      */
-    public Transaction(char type, double amount,
-            double balance, String description) {
+    Transaction(char type, double amount, double balance, String description) {
+
         date = new java.util.Date();
         this.type = type;
         this.amount = amount;
         this.balance = balance;
         this.description = description;
+
     }
 
     /**
-     * @return Date
+     * @return Date.
      */
-    public String getDate() {
+    String getDate() {
         return date.toString();
     }
 
     /**
-     * Set a new type
-     * @param type 
+     * @param type Set a new type.
      */
     public void setType(char type) {
         this.type = type;
     }
 
     /**
-     * @return type
+     * @return type.
      */
-    public char getType() {
+    char getType() {
         return type;
     }
 
     /**
-     * Set new amount
-     * @param amount 
+     * @param amount Set new amount.
      */
     public void setAmount(double amount) {
         this.amount = amount;
     }
 
     /**
-     * @return amount
+     * @return amount.
      */
-    public double getAmount() {
+    double getAmount() {
         return amount;
     }
 
     /**
-     * Set a new balance
-     * @param balance
+     * @param balance Set a new balance.
      */
     public void setBalance(double balance) {
         this.balance = balance;
     }
 
     /**
-     * @return balance
+     * @return balance.
      */
-    public double getBalance() {
+    double getBalance() {
         return balance;
     }
 
     /**
-     * Set a new description
-     *
-     * @param description
+     * @param description Set a new description.
      */
     public void setDescription(String description) {
         this.description = description;
     }
 
     /**
-     * @return description
+     * @return description.
      */
-    public String getDescription() {
+    String getDescription() {
         return description;
     }
+
 }
