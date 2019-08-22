@@ -1,0 +1,105 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/*******************************************************************
+*                        Employee                                  *
+*------------------------------------------------------------------*
+* -office: int                                                     *
+* -salary: double                                                  *
+* -dateHired: MyDate                                               *
+* +Employee(name: String, address: String, phone: String,          *
+*  email: String, office: int, salary: double, dateHired: MyDate); *
+* +getOffice(): int                                                *
+* +getSalary(): double                                             *
+* +getDateHired(): MyDate                                          *
+* +setOffice(office: int): void                                    *
+* +setSalary(salary: double): void                                 *
+* +setDateHired(dateHired: MyDate): void                           *
+* +toString():String                                               *
+*******************************************************************/
+
+package Java_HW.Question_11_02;
+
+/**
+ *
+ * @author AHMED ABUWARDA
+ */
+public class Employee extends Person {
+
+    private int office;
+    private double salary;
+    private MyDate dateHired;
+
+    /**
+     * Construct Employee object
+     * @param name
+     * @param address
+     * @param phone
+     * @param email
+     * @param office
+     * @param salary 
+     */
+    public Employee(String name, String address, String phone, String email, int office, double salary) {
+        super(name, address, phone, email);
+        this.office = office;
+        this.salary = salary;
+        this.dateHired = new MyDate();
+    }
+
+    /**
+     * @return office
+     */
+    public int getOffice() {
+        return office;
+    }
+
+    /**
+     * @return salary
+     */
+    public String getSalary() {
+        return String.format("%.2f", salary);
+    }
+
+    /**
+     * @return date hired
+     */
+    public String getDateHired() {
+        return dateHired.getMonth() + "/" + dateHired.getDay()
+                + "/" + dateHired.getYear();
+    }
+
+    /**
+     * Set new office
+     * @param office 
+     */
+    public void setOffice(int office) {
+        this.office = office;
+    }
+
+    /**
+     * Set new salary
+     * @param salary 
+     */
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    /**
+     * Set new dateHired
+     */
+    public void setDateHired() {
+        dateHired = new MyDate();
+    }
+
+    /**
+     * @return a string description of the class
+     */
+    @Override
+    public String toString() {
+        return super.toString() + "\nOffice: " + office
+                + "\nSalary: $" + getSalary() + "\nDate hired: " + getDateHired();
+    }
+}
