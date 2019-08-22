@@ -1,81 +1,83 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Java_HW.Question_11_14;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-import java.util.ArrayList;
-import java.util.Scanner;
+ package Java_HW.Question_11_14;
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public class Union {
+ import java.util.ArrayList;
+ import java.util.Scanner;
 
-    /**
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ public class Union {
 
-        // Create two ArrayLists
-        ArrayList<Integer> list1 = new ArrayList<Integer>();
-        ArrayList<Integer> list2 = new ArrayList<Integer>();
+     /**
+      * @param args the command line here.
+      */
+     public static void main(String[] args) {
+         // TODO code application logic here.
 
-        // Prompt the user to enter two lists
-        // each with five integers
-        System.out.print("Enter five integers for list1: ");
-        fill(list1);
-        System.out.print("Enter five integers for list2: ");
-        fill(list2);
+         // Create two ArrayLists.
+         ArrayList<Integer> list1 = new ArrayList<>();
+         ArrayList<Integer> list2 = new ArrayList<>();
 
-        // Combined lists
-        ArrayList<Integer> list3 = union(list1, list2);
+         // Prompt the user to enter two lists each with five integers.
+         System.out.print("Enter five integers for list1: ");
+         fill(list1);
 
-        // Display combined list
-        System.out.print("The combined list is: ");
-        
-        for (int i = 0; i < list3.size(); i++) {
-            System.out.print(list3.get(i) + " ");
-        }
-        System.out.println();
-    }
+         System.out.print("Enter five integers for list2: ");
+         fill(list2);
 
-    /**
-     * @param list1
-     * @param list2
-     * @return the union of two array lists of integers
-     */
-    public static ArrayList<Integer> union(ArrayList<Integer> list1, ArrayList<Integer> list2) {
-        
-        ArrayList<Integer> list3 = list1;
-        
-        for (int i = 0; i < list2.size(); i++) {
-            
-            list3.add(list2.get(i));
-            
-        }
-        return list3;
-    }
+         // Combined lists.
+         ArrayList<Integer> list3 = union(list1, list2);
 
-    /**
-     * Adds user input to a list
-     *
-     * @param list
-     */
-    public static void fill(ArrayList<Integer> list) {
+         // Display combined list.
+         System.out.print("The combined list is: ");
 
-        // Create a Scanner
-        Scanner input = new Scanner(System.in);
+         for (Integer integer : list3) {
+             System.out.print(integer + " ");
+         }
 
-        for (int i = 0; i < 5; i++) {
+         System.out.println();
 
-            list.add(input.nextInt());
+     }
 
-        }
+     /**
+      * @param list1 ArrayList1.
+      * @param list2 ArrayList2.
+      * @return The union of two array lists of integers.
+      */
+     private static ArrayList<Integer> union(ArrayList<Integer> list1, ArrayList<Integer> list2) {
 
-    }
+         ArrayList<Integer> list3 = list1;
 
-}
+         // for each loop.
+         for (Integer integer : list2) {
+
+             list3.add(integer);
+
+         }
+
+         return list3;
+
+     }
+
+     /**
+      * @param list An ArrayList "Adds user input to a list".
+      */
+     private static void fill(ArrayList<Integer> list) {
+
+         // Create a Scanner.
+         Scanner input = new Scanner(System.in);
+
+         for (int i = 0; i < 5; i++) {
+
+             list.add(input.nextInt());
+
+         }
+
+     }
+
+ }
