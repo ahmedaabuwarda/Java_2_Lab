@@ -1,39 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package Java_HW.Question_11_10;
+ /*
+  * To change this template file, choose Settings | Editor | File and Code Templates
+  * and change the template in the editor.
+  */
 
-import java.util.Scanner;
+ package Java_HW.Question_11_10;
 
-/**
- *
- * @author AHMED ABUWARDA
- */
-public class TestMyStack {
+ import java.util.Scanner;
 
-    /**
-     * 
-     * @param args 
-     */
-    public static void main(String[] args) {
-        
-        // Create a Scanner
-        Scanner input = new Scanner(System.in);
+ /**
+  * @author AHMED ABUWARDA.
+  */
+ public class TestMyStack {
 
-        // Create a MyStack
-        MyStack stack = new MyStack();
+     /**
+      * @param args the command line here.
+      */
+     public static void main(String[] args) {
+         // TODO code application logic here.
 
-        // Prompt the user to enter five strings
-        System.out.print("Enter five strings: ");
-        for (int i = 0; i < 5; i++) {
-            stack.push(input.next());
-        }
+         // Create a Scanner.
+         Scanner input = new Scanner(System.in);
 
-        // Display in reverse order
-        System.out.println("Stack: " + stack.toString());
-        
-    }
+         // Create a MyStack.
+         MyStack stack = new MyStack();
 
-}
+         // Prompt the user to enter five strings.
+         System.out.print("Enter five strings: ");
+
+         for (int i = 0; i < 5; i++) {
+             stack.push(input.next());
+         }
+
+         // Display in reverse order.
+         System.out.println("Stack: " + stack.toString());
+
+     }
+
+ }
