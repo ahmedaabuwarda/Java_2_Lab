@@ -1,37 +1,32 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_12.Excersie;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _05_Ex02_User {
 
-    /**
-     * Data fields
-     */
+    // Data fields.
     private int ID;
     private String userName;
     private String email;
     private static int counter = 0;
-    
-    /**
-     * Default constructor
-     */
+
+    // Default constructor.
     _05_Ex02_User() {
         counter++;
     }
 
     /**
-     * Another constructor
+     * Another constructor.
      *
-     * @param ID
-     * @param userName
-     * @param email
+     * @param ID       Id.
+     * @param userName User name.
+     * @param email    Email.
      */
     _05_Ex02_User(int ID, String userName, String email) {
 
@@ -43,60 +38,51 @@ public class _05_Ex02_User {
     }
 
     /**
-     *
-     * @return ID
+     * @return Id.
      */
     public int getID() {
         return ID;
     }
 
     /**
-     * Set ID
-     *
-     * @param ID
+     * @param ID Set id.
      */
     public void setID(int ID) {
         this.ID = ID;
     }
 
     /**
-     *
-     * @return User Name
+     * @return User name.
      */
-    public String getUserName() {
+    String getUserName() {
         return userName;
     }
 
     /**
-     * Set User Name
-     *
-     * @param userName
+     * @param userName Set user name.
      */
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
     /**
-     *
-     * @return Email
+     * @return Email.
      */
-    public String getEmail() {
+    String getEmail() {
         return email;
     }
 
     /**
-     * Set Email
-     *
-     * @param email
+     * @param email Set email.
      */
     public void setEmail(String email) {
         this.email = email;
     }
+
     /**
-     * 
-     * @return number of objects
+     * @return Number of objects.
      */
-    public static int getCounter(){
+    static int getCounter() {
         return counter;
     }
 

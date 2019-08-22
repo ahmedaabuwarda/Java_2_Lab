@@ -1,38 +1,33 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Lab_12.Excersie;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class _04_Ex01_TestBank {
 
     /**
-     *
-     * @param args the command line arguments
+     * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        //TODO code application logic here
+        //TODO code application logic here.
 
-        /**
-         * Create user1 object from _04_Ex01_Bank class, And assign values to it
-         */
-        _04_Ex01_Bank user1 = new _04_Ex01_Bank(12016666, 20.19, "Ahmed Abuwarda", "abu@bank.com", 599409772);
+        // Create user1 object from _04_Ex01_Bank class, And assign values to it
+        _04_Ex01_Bank user1 = new _04_Ex01_Bank(12016666, 20.19,
+                "Ahmed Abuwarda", "abu@bank.com", 599409772);
 
-        /**
-         * if you want to add new balance to your account
-         */
+        // If you want to add new balance to your account.
         double value = 120.45;
 
         if (value > 0) {
 
             System.out.println("You have in your account: " + user1.getBalance() + " $");
 
-            // Add value to your account
+            // Add value to your account.
             user1.depositFunds(value);
 
             System.out.println("You have added to your account: " + value + " $"
@@ -42,16 +37,15 @@ public class _04_Ex01_TestBank {
             System.out.println("You have entered an Invalid value,Please try again!");
         }
 
-        /**
-         * if you want to withdraw new balance from your account
-         */
+        // If you want to withdraw new balance from your account.
         double value2 = 100.12;
 
+        // If statement.
         if (user1.getBalance() > 0 && value2 < user1.getBalance()) {
 
-            // Withdrow value from your account
+            // Withdraw value from your account.
             user1.withdrawFunds(value2);
-            
+
             System.out.println("You have withdrow: " + value2 + " from your account,"
                     + " your new balance is: " + user1.getBalance());
 
