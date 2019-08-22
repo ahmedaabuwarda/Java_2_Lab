@@ -1,21 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ /*
+ * To change this template file, choose Settings | Editor | File and Code Templates
+ * and change the template in the editor.
  */
+
 package Java_HW.Question_10_10;
 
 /**
- *
- * @author AHMED ABUWARDA
+ * @author AHMED ABUWARDA.
  */
 public class TestQueue {
 
     /**
-     *
-     * @param args
+     * @param args the command line here.
      */
     public static void main(String[] args) {
+        // TODO code application logic here.
+
         // Create a Queue object
         Queue queue = new Queue();
 
@@ -28,7 +28,9 @@ public class TestQueue {
         while (!queue.empty()) {
             System.out.print(queue.dequeue() + " ");
         }
+
         System.out.println();
+
     }
 
 }
