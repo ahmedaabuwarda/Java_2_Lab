@@ -37,7 +37,7 @@ public class _03_TestPersonWithArrayList {
          * Another way...
          *
          * person.add(new _03_PersonWithArrayList("Ahmed","Abuwarda",12));
-         * person.add(new _03_PersonWithArrayList("hola","buwarda",13));
+         * person.add(new _03_PersonWithArrayList("safaa","buwarda",13));
          */
 
         // Print person1 data which exists in ArrayList.
